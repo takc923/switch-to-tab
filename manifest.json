@@ -1,10 +1,13 @@
 {
-  "name": "Switch to Tab",
-  "description": "Use the omnibox to search your tabs!",
-  "version": "3",
-  "permissions": ["tabs"],
-  "omnibox": {
-    "keyword": "t"
-  },
-  "background_page": "background.html"
+    "name": "Switch to Tab",
+    "manifest_version": 2,
+    "description": "Use the omnibox to search your tabs!",
+    "version": "3",
+    "permissions": ["tabs"],
+    "omnibox": {
+        "keyword": "t"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
 }

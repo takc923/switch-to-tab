@@ -83,7 +83,7 @@ function formatMatches(parsed) {
 }
 
 omnibox.onInputChanged.addListener(function(text, suggest) {
-    text = text.toLowerCase().replace(/\W+/g, ' ').trim();
+    text = text.toLowerCase().replace(/\s+/g, ' ').trim();
     if (!text)
         return;
 

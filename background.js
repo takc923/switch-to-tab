@@ -116,6 +116,9 @@ omnibox.onInputChanged.addListener(function(text, suggest) {
             };
         });
 
+        var defaultSuggestion = suggestions.shift();
+        delete defaultSuggestion.content;
+        omnibox.setDefaultSuggestion(defaultSuggestion);
         suggest(suggestions);
     });
 });
